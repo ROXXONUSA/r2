@@ -134,7 +134,8 @@ from r2.models import (
     valid_otp_cookie,
 )
 from r2.lib.db import tdb_cassandra
-
+from honeybadger import honeybadger
+honeybadger.configure(api_key='9116f4e7')
 
 # Cookies which may be set in a response without making it uncacheable
 CACHEABLE_COOKIES = ()

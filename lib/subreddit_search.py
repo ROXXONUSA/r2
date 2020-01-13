@@ -26,6 +26,8 @@ from r2.lib.db.operators import desc
 from r2.lib import utils
 from r2.lib.db import tdb_cassandra
 from r2.lib.cache import CL_ONE
+from honeybadger import honeybadger
+honeybadger.configure(api_key='9116f4e7')
 
 class SubredditsByPartialName(tdb_cassandra.View):
     _use_db = True

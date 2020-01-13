@@ -1123,8 +1123,9 @@ class RedditFooter(CachedTemplate):
                 separator = ""),
 
             NavMenu([
-                    OffsiteButton(_("Chatterly Status"), "//status.chatterly.me"),
                     NamedButton("gold", False, dest="/gold", css_class="buygold"),
+                    OffsiteButton(_("Chatterly Status"), "//status.chatterly.me"),
+                    OffsiteButton(_("Help Us Translate"), "//crowdin.com/project/chatterly"),
                     OffsiteButton(_("Meet the Host"), "//beebo.dev"),
                 ],
                 title = _("<3"),

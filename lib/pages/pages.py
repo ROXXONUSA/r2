@@ -1115,7 +1115,7 @@ class RedditFooter(CachedTemplate):
                         "https://itunes.apple.com/us/app/reddit-the-official-app/id1064216828?mt=8"),
                     OffsiteButton(_("Socially for Android"),
                         "https://play.google.com/store/apps/details?id=com.reddit.frontpage"),
-                    OffsiteButton(_("mobile website"), "https://m.reddit.com"),
+                    OffsiteButton(_("mobile website"), "https://m.chatterly.me"),
                     NamedButton("buttons", False),
                 ],
                 title = _("apps & tools"),
@@ -1123,6 +1123,7 @@ class RedditFooter(CachedTemplate):
                 separator = ""),
 
             NavMenu([
+                    OffsiteButton(_("Chatterly Status"), "//status.chatterly.me"),
                     NamedButton("gold", False, dest="/gold", css_class="buygold"),
                     OffsiteButton(_("Meet the Host"), "//beebo.dev"),
                 ],

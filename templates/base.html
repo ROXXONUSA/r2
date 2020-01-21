@@ -44,8 +44,8 @@
         PB.domain = "https://chatterly.me";
         PB.logging_enabled = true;
         PB.auto_subscribe = true;
-        //PB.worker_url = PB.domain + "/static/js/pushbots-worker.js";
-        //PB.manifest_url = PB.domain + "/static/js/pushbots-push-manifest.json";
+        PB.worker_url = PB.domain + "/static/js/pushbots-worker.js";
+        PB.manifest_url = PB.domain + "/static/js/pushbots-push-manifest.json";
         PB.welcome = {title:"Welcome ",message:"Thanks for subscribing!", url :PB.domain};
 
         function sendNotification(){

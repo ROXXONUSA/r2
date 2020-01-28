@@ -1088,8 +1088,8 @@ class RedditFooter(CachedTemplate):
     def __init__(self):
         self.nav = [
             NavMenu([
-                    NamedButton("blog", False, dest="/blog"),
-                    OffsiteButton("about", "https://about.beebo.dev/"),
+                    NamedButton("blog", False, dest="https://blog.chatterly.me"),
+                    OffsiteButton("about", "https://help.chatterly.me/display/CHAT/about"),
                     NamedButton("source_code", False, dest="/code"),
                     NamedButton("advertising", False),
                     NamedButton("jobs", False),
@@ -1099,12 +1099,10 @@ class RedditFooter(CachedTemplate):
                 separator = ""),
 
             NavMenu([
-                    NamedButton("rules", False),
-                    OffsiteButton(_("FAQ"), "https://roxxon.zendesk.com"),
-                    NamedButton("wiki", False),
-                    NamedButton("reddiquette", False, dest="/wiki/reddiquette"),
-                    NamedButton("transparency", False, dest="/wiki/transparency"),
-                    NamedButton("contact", False),
+                    NamedButton("rules", False, dest="https://help.chatterly.me/display/CHAT/Site+Rules"),
+                    OffsiteButton(_("FAQ"), "https://help.chatterly.me/display/CHAT/FAQ"),
+                    NamedButton("transparency", False, dest="https://help.chatterly.me/display/CHAT/Transparency"),
+                    NamedButton("contact", False, dest="https://support.ehlomedia.com/servicedesk/customer/portal/1"),
                 ],
                 title = _("help"),
                 type = "flat_vert",

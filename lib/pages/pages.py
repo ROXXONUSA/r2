@@ -1110,6 +1110,7 @@ class RedditFooter(CachedTemplate):
 
             NavMenu([
                     OffsiteButton(_("Socially for iPhone"),
+                    
                         "https://itunes.apple.com/us/app/reddit-the-official-app/id1064216828?mt=8"),
                     OffsiteButton(_("Socially for Android"),
                         "https://play.google.com/store/apps/details?id=me.chatterly.socially"),
